@@ -259,4 +259,64 @@ body, html {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    height: 60px;
+    padding: 0 1rem;
+  }
+
+  .brand span {
+    font-size: 18px !important;
+  }
+
+  .sidebar {
+    width: 200px;
+    top: 60px;
+    height: calc(100% - 60px);
+    padding: 0.5rem;
+  }
+
+  .dashboard {
+    padding: 50px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: auto;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .tile {
+    width: 100%;
+    height: 120px;
+    font-size: 16px;
+  }
+
+  .tile i {
+    font-size: 28px;
+    margin-bottom: 6px;
+  }
+
+  .nav-actions {
+    gap: 10px;
+  }
+
+  .profile-icon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Task calendar panel adjusts for smaller screens */
+  .task-calendar-panel {
+    width: 90vw;
+    right: 5vw;
+    top: 70px;
+    max-height: 60vh;
+    padding: 15px;
+  }
+}
+
 
