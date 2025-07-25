@@ -174,3 +174,59 @@ form input {
   height: auto;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 20px 10px;
+    display: block;
+  }
+
+  .login-container {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  .login-form-section {
+    padding: 20px;
+  }
+
+  .login-form-section h2 {
+    font-size: 1.5rem;
+  }
+
+  form label {
+    margin-top: 15px;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+
+  .login-btn {
+    padding: 14px;
+    font-size: 1.1rem;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .social-btn {
+    min-width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .register-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+
+  .login-image-section {
+    display: none; /* Hide image on small screens */
+  }
+}
