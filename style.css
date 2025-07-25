@@ -1,0 +1,66 @@
+﻿:root {
+  --accent-orange: #FFA500;
+  --accent-yellow: #FFD700;
+  --background-white: #ffffff;
+  --footer-text: #555555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.landing-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 220px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.loader-bar {
+  width: 280px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, var(--accent-orange), var(--accent-yellow));
+  animation: loadProgress 3s forwards;
+  border-radius: 10px;
+}
+
+@keyframes loadProgress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--footer-text);
+  width: 100%;
+}

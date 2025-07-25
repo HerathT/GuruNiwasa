@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GuruNiwasa LMS - Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-form-section">
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Login to your GuruNiwasa LMS account</p>
+
+      <form id="loginForm">
+        <label for="username">Username or Email</label>
+        <input type="text" id="username" placeholder="Enter your username or email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+
+        <div class="actions">
+          <a href="#" class="forgot">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="login-btn">Login</button>
+
+        <div class="divider">or login with</div>
+
+        <div class="social-buttons">
+            <a class="social-btn google">
+                <img src="components\google.svg" alt="Google Logo" class="btn-logo" />
+               
+            </a>
+            <a class="social-btn linkedin">
+                <img src="components\linkedin.svg" alt="LinkedIn Logo" class="btn-logo" />
+                
+            </a>
+            <a class="social-btn facebook">
+                <img src="components\facebook.svg" alt="Facebook Logo" class="btn-logo" />
+               
+            </a>
+        </div>
+
+        <div class="register-link">
+          Don’t have an account? <a href="sign.html">Register Here</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="login-image-section">
+      <img src="components\image.jpg" alt="Login visual" />
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

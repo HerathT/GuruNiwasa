@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GuruNiwasa LMS - Student Registration</title>
+  <link rel="stylesheet" href="sign.css" />
+</head>
+<body>
+  <div class="registration-container">
+    <h2>Student Registration</h2>
+    <form class="registration-form">
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Student Number</label>
+          <input type="text" placeholder="Enter student number" required />
+        </div>
+
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required />
+        </div>
+
+        <div class="form-group">
+          <label>Date of Birth</label>
+          <input type="date" required />
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <select required>
+            <option value="" disabled selected>Select gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Address</label>
+          <input type="text" placeholder="Enter address" required />
+        </div>
+
+        <div class="form-group">
+          <label>School</label>
+          <input type="text" placeholder="Enter school name" required />
+        </div>
+
+        <div class="form-group">
+          <label>District</label>
+          <select required>
+            <option value="" disabled selected>Select district</option>
+            <option>Ampara</option>
+            <option>Anuradhapura</option>
+            <option>Badulla</option>
+            <option>Batticaloa</option>
+            <option>Colombo</option>
+            <option>Galle</option>
+            <option>Gampaha</option>
+            <option>Hambantota</option>
+            <option>Jaffna</option>
+            <option>Kalutara</option>
+            <option>Kandy</option>
+            <option>Kegalle</option>
+            <option>Kilinochchi</option>
+            <option>Kurunegala</option>
+            <option>Mannar</option>
+            <option>Matale</option>
+            <option>Matara</option>
+            <option>Monaragala</option>
+            <option>Mullaitivu</option>
+            <option>Nuwara Eliya</option>
+            <option>Polonnaruwa</option>
+            <option>Puttalam</option>
+            <option>Ratnapura</option>
+            <option>Trincomalee</option>
+            <option>Vavuniya</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Town / City</label>
+          <input type="text" placeholder="Enter town or city" required />
+        </div>
+
+        <div class="form-group">
+          <label>Parent's Phone Number</label>
+          <input type="tel" placeholder="Enter parent's phone" required />
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Create password" required />
+        </div>
+      </div>
+
+      <div class="submit-wrapper">
+        <button type="submit" class="submit-btn">Register</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- OTP Popup Modal -->
+  <div class="otp-modal" id="otpModal">
+    <div class="otp-content">
+        <span class="close-btn" onclick="closeOTPModal()">&times;</span>
+            <h3>Enter OTP</h3>
+            <p>We’ve sent an OTP to the provided phone number.</p>
+                <input type="text" id="otpInput" maxlength="6" placeholder="Enter 4-digit OTP" />
+                 <button onclick="verifyOTP()">Verify</button>
+            <p id="otpError" class="error-msg"></p>
+    </div>
+  </div>
+
+    <!-- Final Success Message -->
+    <div class="success-modal" id="successModal">
+        <div class="success-content">
+            <h3>✅ Registration Successful</h3>
+            <p>You can now log in using your Student Number and Password.</p>
+            <button onclick="closeSuccessModal()">Close</button>
+        </div>
+    </div>
+
+<script src="sign.js"></script>
+
+
+</body>
+</html>
